@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ title_name }}<title>
+	</head>
+	<body>
+	<h1>{{ h1_title }}</h1>
+	{% for p in ps %}
+		<p>{{ loop.index }} =>  name:{{ p.name}},desc:{{ p.desc}}</p>
+	{% endfor %}
+	</body>
+</html>
