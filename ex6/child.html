@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block head %}
+	{{ super() }}
+	<style type="text/css">
+		#first {
+			color: red;
+		}
+		#second{
+			color: blue;
+		}
+	</style>
+{% endblock %}
+{% block content %}
+	<h1> Hello Jinja2 </h1>
+{% endblock %}
+{% block footer %}
+	<p> this is footer</p>
+{% endblock %}

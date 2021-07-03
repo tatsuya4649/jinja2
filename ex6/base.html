@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<head>
+	{% block head %}
+	<link rel="stylesheet" href="style.css" />
+	<title> Sample </title>
+	{% endblock %}
+</head>
+<body>
+	<div id="first">{% block content %}{% endblock %}</div>
+	<div id="second">{% block footer %}{% endblock %}</div>
+</body>
