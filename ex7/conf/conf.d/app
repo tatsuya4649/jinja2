@@ -1,0 +1,6 @@
+upstream app{
+	{## IP Address of App Server ##}
+	{%- for ip in ip_addresses %}
+		server {{ip}}:18080;
+	{%- endfor %}
+}
